@@ -1,7 +1,8 @@
 {
   "name": "kadivaalam",
-  "private": true,
-  "version": "0.0.0",
+  "description": "A web app that helps create and time focussed work sessions.",
+  "private": false,
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "start": "vite",
