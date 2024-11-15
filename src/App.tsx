@@ -3,10 +3,10 @@ import { Home } from './pages/Home';
 import { Planner } from './pages/Planner';
 export default function App() {
   return (
-    <main className="px-[25%]">
+    <main className="px-4 lg:px-[25%]">
       <header className="border-b-4 border-primary">
         <h1
-          className="text-5xl font-bold my-8"
+          className="text-3xl my-4 lg:text-5xl lg:my-8 font-bold "
           test-id="title"
           role="title"
         >Kadivaalam</h1>
