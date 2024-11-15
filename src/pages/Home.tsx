@@ -1,7 +1,7 @@
 export function Home() {
     return (
-        <main role="how-to-help-text" className="py-16">
-            <ol role="help-text-list" className="list-inside list-decimal text-center text-3xl space-y-8">
+        <main role="how-to-help-text" className="py-6 lg:py-16">
+            <ol role="help-text-list" className="list-inside list-decimal text-center text-xl space-y-2 lg:text-3xl lg:space-y-8">
                 <li>Create a list of tasks</li>
                 <li>Set a time for each task</li>
                 <li>Start the session, complete the tasks and be rewarded</li>
