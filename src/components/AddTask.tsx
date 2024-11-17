@@ -27,8 +27,9 @@ export function AddTask({ onAddTask, onClose }: AddTaskProps) {
                 setDescription('');
             }}
         >
+            <label htmlFor="task-title" role="task-title-label" className="sr-only">Task Title</label>
             <input
-                tabIndex={1}
+                tabIndex={0}
                 type="text"
                 name="Task Title"
                 aria-label="Task Title"
@@ -38,8 +39,9 @@ export function AddTask({ onAddTask, onClose }: AddTaskProps) {
                 value={title}
                 onChange={(event) => setTitle(event.target.value)}
                 autoFocus
-                className="bg-background border-b border-foreground"
+                className="bg-background border-b border-foreground focus:outline-transparent focus:outline-0 px-2 py-3"
             />
+            <label htmlFor="task-description" role="task-description-label" className="sr-only">Task Description</label>
             <TextareaAutosize
                 name="Task Description"
                 id="task-description"
@@ -48,16 +50,31 @@ export function AddTask({ onAddTask, onClose }: AddTaskProps) {
                 placeholder="Enter Task Description Here"
                 value={description}
                 onChange={(event: React.FormEvent<HTMLTextAreaElement>) => setDescription(event.currentTarget.value)}
-                className="bg-background border-none outline-0 max-h-32"
-                onPointerEnterCapture={()=>{}}
-                onPointerLeaveCapture={()=>{}}
+                className="bg-background border-none outline-0 min-h-16 max-h-32 px-2 py-3"
+                onPointerEnterCapture={() => { }}
+                onPointerLeaveCapture={() => { }}
             />
-            <button type="submit" role="submit-task-button" disabled={!title || !description}><Check /></button>
-            <button 
-                type="button" 
-                role="abort-add-task-button"
-                onClick={() => onClose()}
-            ><X /></button>
+            <div role="-action-button-group" className="flex justify-end mt-4 space-x-4">
+                <button
+                    type="submit"
+                    role="submit-task-button"
+                    disabled={!title || !description}
+                    className="text-green-600 border-4 rounded-xl p-4 disabled:text-secondary"
+                >
+                    <Check />
+                    <p className="sr-only">Save Task</p>
+                </button>
+                <button
+                    type="button"
+                    role="abort-add-task-button"
+                    className="text-red-600 border-4 rounded-xl p-4"
+                    onClick={() => onClose()}
+                >
+                    <X />
+                    <p className="sr-only">Cancel</p>
+                </button>
+
+            </div>
         </form>
     );
 }
