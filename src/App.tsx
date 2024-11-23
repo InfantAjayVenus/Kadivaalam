@@ -1,7 +1,9 @@
-import {BrowserRouter as Router, Route} from 'react-router-dom';
+import { Route, BrowserRouter as Router } from 'react-router-dom';
 import { Home } from './pages/Home';
 import { Planner } from './pages/Planner';
+import { TaskDetails } from './pages/TaskDetails';
 export default function App() {
+
   return (
     <main className="px-4 lg:px-[25%] overflow-hidden">
       <header className="border-b-4 border-primary">
@@ -14,7 +16,8 @@ export default function App() {
       <>
         <Router>
           <Route exact path="/" component={Home} />
-          <Route path="/session-planner" component={Planner} />
+          <Route exact path="/session-planner" component={Planner} />
+          <Route path="/session-planner/:taskId" component={TaskDetails} />
         </Router>
       </>
     </main>
