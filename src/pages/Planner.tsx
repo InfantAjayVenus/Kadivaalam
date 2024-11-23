@@ -3,6 +3,7 @@ import { nanoid } from 'nanoid';
 import { useState } from 'react';
 import { AddTask } from '../components/AddTask';
 import { TaskItem } from '../components/TaskItem';
+import { useTaskStore } from '../stores/taskStore';
 import { Task } from '../types/Task';
 
 interface PlannerProps {
@@ -12,8 +13,8 @@ interface PlannerProps {
 export function Planner({ taskId = "" }: PlannerProps) {
 
     const [isAddFormOpen, setIsAddFormOpen] = useState(false);
-    const [taskList, setTasksList] = useState<Task[]>([]);
-    
+    const { tasks: taskList, addTask } = useTaskStore();
+
     return (
         <main role="planner" className='overflow-y-hidden'>
             <p role="task-counter" className='text-2xl mt-2 mb-6'>{taskList.length}</p>
@@ -51,7 +52,7 @@ export function Planner({ taskId = "" }: PlannerProps) {
                             }
                         }
 
-                        setTasksList([...taskList, newTask]);
+                        addTask(newTask);
 
                     }}
                     onClose={() => setIsAddFormOpen(false)}
