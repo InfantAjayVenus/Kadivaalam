@@ -4,12 +4,13 @@ import userEvent from "@testing-library/user-event";
 import { afterEach } from "node:test";
 import { beforeEach, describe, expect, it } from "vitest";
 import { Planner } from "./Planner";
+import { MemoryRouter } from "react-router-dom";
 
 describe("Planner", () => {
     beforeEach(() => {
         cleanup();
         render(
-           <Planner /> 
+            <Planner />
         );
     })
 
@@ -91,7 +92,9 @@ describe("Add Task in Planner", () => {
     beforeEach(async () => {
         cleanup();
         render(
-           <Planner /> 
+            <MemoryRouter>
+                <Planner />
+            </MemoryRouter>
         )
         await userEvent.click(screen.getByRole(addTaskButtonRole))
         await userEvent.type(screen.getByRole(taskTitleInputRole), taskData.title);
