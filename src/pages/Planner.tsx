@@ -31,7 +31,7 @@ export function Planner({ taskId = "" }: PlannerProps) {
 
             }
             {taskList.length > 0 &&
-                <ul role="tasks-list" className='max-h-96 mb-4'>
+                <ul role="tasks-list" className='max-h-96 mb-4 space-y-4'>
                     {taskList.map(taskItem => (
                         <TaskItem task={taskItem} key={taskItem.id} isActive={taskItem.id === taskId} />
                     ))}
