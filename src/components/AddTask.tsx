@@ -1,15 +1,22 @@
 import { Check, X } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import TextareaAutosize from "react-autosize-textarea";
 
 interface AddTaskProps {
+    taskTitle?: string;
+    taskDescription?: string;
     onAddTask: (taskTitle: string, taskDescription: string) => void;
     onClose: () => void;
 }
 
-export function AddTask({ onAddTask, onClose }: AddTaskProps) {
+export function AddTask({ onAddTask, onClose, taskTitle="", taskDescription="" }: AddTaskProps) {
     const [title, setTitle] = useState("");
     const [description, setDescription] = useState("");
+
+    useEffect(() => {
+        setTitle(taskTitle);
+        setDescription(taskDescription);
+    }, [taskTitle, taskDescription]);
 
     return (
 

@@ -54,6 +54,34 @@ describe("AddTask", () => {
         });
 
     });
+    describe("when form is passed with previous values", () => {
+        const onAddTask = vi.fn();
+        const onClose = vi.fn();
+
+        beforeEach(() => {
+            render(
+                <AddTask
+                    onAddTask={onAddTask}
+                    onClose={onClose}
+                    taskTitle={taskData.title}
+                    taskDescription={taskData.description}
+                />
+            )
+        });
+
+        afterEach(() => {
+            cleanup();
+        });
+
+        it("should render with previous values", async () => {
+
+            await screen.findByRole(taskTitleInputRole);
+            await screen.findByRole(taskDescriptionInputRole);
+
+            expect(screen.getByRole(taskTitleInputRole)).toHaveValue(taskData.title);
+            expect(screen.getByRole(taskDescriptionInputRole)).toHaveValue(taskData.description);
+        });
+    });
 
     describe("when the form is submitted", () => {
         const onAddTask = vi.fn();
