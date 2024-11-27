@@ -1,5 +1,5 @@
 import { Check, X } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import TextareaAutosize from "react-autosize-textarea";
 
 interface AddTaskProps {
@@ -12,6 +12,7 @@ interface AddTaskProps {
 export function AddTask({ onAddTask, onClose, taskTitle="", taskDescription="" }: AddTaskProps) {
     const [title, setTitle] = useState("");
     const [description, setDescription] = useState("");
+    const inputRef = useRef<HTMLInputElement | null>(null);
 
     useEffect(() => {
         setTitle(taskTitle);
@@ -29,13 +30,18 @@ export function AddTask({ onAddTask, onClose, taskTitle="", taskDescription="" }
                 onAddTask(title, description);
                 submitEvent.currentTarget.reset();
             }}
-            onReset={() => {
+            onReset={(event) => {
+                event.preventDefault();
+                event.stopPropagation();
+
                 setTitle('');
                 setDescription('');
+                inputRef.current?.focus();
             }}
         >
             <label htmlFor="task-title" role="task-title-label" className="sr-only">Task Title</label>
             <input
+                ref={inputRef}
                 tabIndex={0}
                 type="text"
                 name="Task Title"
