@@ -68,16 +68,15 @@ export function Planner({ taskId = "" }: PlannerProps) {
                     Add Task <Plus size={32} />
                 </button>
                 {taskList.length > 0 &&
-                    <a href="/work-board" role="start-session-link">
-                        <button
-                            role='start-session-button'
-                            className='flex items-center justify-center space-x-2 mx-auto  border border-foreground rounded-2xl py-2 px-16 text-xl font-bold disabled:border-secondary disabled:text-secondary'
-                        >
-                            Start Session <Play size={32} />
-                        </button>
+                    <a
+                        href="/work-board"
+                        role="start-session-link"
+                        className='flex items-center justify-center space-x-2 mx-auto  border border-foreground rounded-2xl py-2 px-16 text-xl font-bold disabled:border-secondary disabled:text-secondary'
+                    >
+                        Start Session <Play size={32} />
                     </a>
                 }
             </div>
-        </main>
+        </main >
     );
 }
