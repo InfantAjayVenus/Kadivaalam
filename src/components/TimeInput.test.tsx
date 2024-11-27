@@ -5,8 +5,8 @@ import { TimeInput } from "./TimeInput";
 import userEvent from "@testing-library/user-event";
 
 describe("TimeInput validation and behaviour", () => {
-    const minuteInputRole = "minute-input";
-    const secondInputRole = "second-input";
+    const minuteInputRole = "hour-input";
+    const secondInputRole = "minute-input";
 
     beforeEach(() => {
         cleanup();
@@ -61,8 +61,8 @@ describe("TimeInput data update", () => {
         minutes: 5,
         seconds: 5
     };
+    const hourInputRole = "hour-input";
     const minuteInputRole = "minute-input";
-    const secondInputRole = "second-input";
     const onChangeMock = vi.fn();
 
     describe("on change", () => {
@@ -72,8 +72,8 @@ describe("TimeInput data update", () => {
         });
 
         it("should call onchange with the new value", async () => { 
-            await userEvent.type(screen.getByRole(minuteInputRole), initialValues.minutes.toString());
-            await userEvent.type(screen.getByRole(secondInputRole), initialValues.seconds.toString());
+            await userEvent.type(screen.getByRole(hourInputRole), initialValues.minutes.toString());
+            await userEvent.type(screen.getByRole(minuteInputRole), initialValues.seconds.toString());
 
             expect(onChangeMock).toHaveBeenCalledWith(initialValues.minutes, initialValues.seconds);
         });
@@ -82,15 +82,15 @@ describe("TimeInput data update", () => {
     describe("initial Values", () => {
         beforeEach(() => {
             cleanup();
-            render(<TimeInput onChange={onChangeMock} initialMinutes={initialValues.minutes} initialSeconds={initialValues.seconds} />);
+            render(<TimeInput onChange={onChangeMock} initialHours={initialValues.minutes} initialMinutes={initialValues.seconds} />);
         });
 
         it("should render the input with initial values", async () => {
+            await screen.findByRole(hourInputRole);
             await screen.findByRole(minuteInputRole);
-            await screen.findByRole(secondInputRole);
 
-            expect(screen.getByRole(minuteInputRole)).toHaveValue(initialValues.minutes.toString().padStart(2, '0'));
-            expect(screen.getByRole(secondInputRole)).toHaveValue(initialValues.seconds.toString().padStart(2, '0'));
+            expect(screen.getByRole(hourInputRole)).toHaveValue(initialValues.minutes.toString().padStart(2, '0'));
+            expect(screen.getByRole(minuteInputRole)).toHaveValue(initialValues.seconds.toString().padStart(2, '0'));
         })
     })
 });
