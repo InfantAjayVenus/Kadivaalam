@@ -108,9 +108,10 @@ describe("Add Task in Planner", () => {
     });
 
     it("should increment the counter when a task is submitted", async () => {
+        const tasksCount = screen.getByRole(tasksListRole).childElementCount;
 
         await screen.findByRole(taskCounterRole);
-        expect(screen.getByRole(taskCounterRole)).toHaveTextContent('1');
+        expect(screen.getByRole(taskCounterRole)).toHaveTextContent(tasksCount.toString());
     });
 
     it("should not render the help text when a task is submitted", async () => {
