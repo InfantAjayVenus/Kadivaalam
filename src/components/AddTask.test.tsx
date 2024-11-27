@@ -106,7 +106,7 @@ describe("AddTask", () => {
             await userEvent.type(screen.getByRole(taskDescriptionInputRole), taskData.description);
             await userEvent.click(screen.getByRole(submitTaskButtonRole));
 
-            expect(onAddTask).toHaveBeenCalledWith(taskData.title, taskData.description);
+            expect(onAddTask).toHaveBeenCalledWith(taskData.title, taskData.description, {hours: 0, minutes: 0});
         });
 
         it("should submit on enter key", async () => {
@@ -115,7 +115,7 @@ describe("AddTask", () => {
             await userEvent.type(screen.getByRole(taskDescriptionInputRole), taskData.description);
             await userEvent.keyboard("{Enter}");
 
-            expect(onAddTask).toHaveBeenCalledWith(taskData.title, taskData.description);
+            expect(onAddTask).toHaveBeenCalledWith(taskData.title, taskData.description, {hours: 0, minutes: 0});
         });
 
         it("should clear form on submit", async () => {

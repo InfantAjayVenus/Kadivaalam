@@ -1,17 +1,19 @@
 import { Check, X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import TextareaAutosize from "react-autosize-textarea";
+import { TimeInput } from "./TimeInput";
 
 interface AddTaskProps {
     taskTitle?: string;
     taskDescription?: string;
-    onAddTask: (taskTitle: string, taskDescription: string) => void;
+    onAddTask: (taskTitle: string, taskDescription: string, duration: { hours: number, minutes: number }) => void;
     onClose: () => void;
 }
 
-export function AddTask({ onAddTask, onClose, taskTitle="", taskDescription="" }: AddTaskProps) {
+export function AddTask({ onAddTask, onClose, taskTitle = "", taskDescription = "" }: AddTaskProps) {
     const [title, setTitle] = useState("");
     const [description, setDescription] = useState("");
+    const [duration, setDuration] = useState({ hours: 0, minutes: 0 });
     const inputRef = useRef<HTMLInputElement | null>(null);
 
     useEffect(() => {
@@ -27,7 +29,7 @@ export function AddTask({ onAddTask, onClose, taskTitle="", taskDescription="" }
             onSubmit={(submitEvent) => {
 
                 submitEvent.preventDefault();
-                onAddTask(title, description);
+                onAddTask(title, description, duration);
                 submitEvent.currentTarget.reset();
             }}
             onReset={(event) => {
@@ -39,21 +41,29 @@ export function AddTask({ onAddTask, onClose, taskTitle="", taskDescription="" }
                 inputRef.current?.focus();
             }}
         >
-            <label htmlFor="task-title" role="task-title-label" className="sr-only">Task Title</label>
-            <input
-                ref={inputRef}
-                tabIndex={0}
-                type="text"
-                name="Task Title"
-                aria-label="Task Title"
-                id="task-title"
-                role="task-title-input"
-                placeholder="Enter Task Title Here"
-                value={title}
-                onChange={(event) => setTitle(event.target.value)}
-                autoFocus
-                className="bg-background border-b border-foreground focus:outline-transparent focus:outline-0 px-2 py-3"
-            />
+            <div 
+                role="group text input and time input for better UI"
+                className="w-full flex flex-row border-b border-foreground"
+            >
+                <label htmlFor="task-title" role="task-title-label" className="sr-only">Task Title</label>
+                <input
+                    ref={inputRef}
+                    tabIndex={0}
+                    type="text"
+                    name="Task Title"
+                    aria-label="Task Title"
+                    id="task-title"
+                    role="task-title-input"
+                    placeholder="Enter Task Title Here"
+                    value={title}
+                    onChange={(event) => setTitle(event.target.value)}
+                    autoFocus
+                    className="bg-background border-r border-secondary focus:outline-transparent focus:outline-0 px-2 py-3 flex-grow"
+                />
+                <TimeInput onChange={(hours, minutes) => setDuration({ hours, minutes })} />
+
+            </div>
+
             <label htmlFor="task-description" role="task-description-label" className="sr-only">Task Description</label>
             <TextareaAutosize
                 name="Task Description"
