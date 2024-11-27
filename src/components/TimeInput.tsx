@@ -11,6 +11,7 @@ export function TimeInput({ onChange, initialMinutes = 0, initialSeconds = 0 }: 
     const [seconds, setSeconds] = useState('');
 
     const secondRef = useRef<HTMLInputElement | null>(null);
+    const inputClassName = "bg-background outline-transparent px-2 py-3 w-10 text-center";
 
     useEffect(() => {
        if(initialMinutes > 0) {
@@ -36,7 +37,11 @@ export function TimeInput({ onChange, initialMinutes = 0, initialSeconds = 0 }: 
 
 
     return (
-        <>
+        <div 
+            role="time input" 
+            aria-description="This is an input group that has minutes and seconds to add duration values."
+            className="flex bg-background w-min"
+        >
             <label htmlFor="minute-input" role="minute input label" className="sr-only">Minutes</label>
             <input
                 value={minutes}
@@ -46,8 +51,9 @@ export function TimeInput({ onChange, initialMinutes = 0, initialSeconds = 0 }: 
                 inputMode="numeric"
                 pattern="\d{2}"
                 role="minute-input"
-                placeholder="00"
+                placeholder="mm"
                 maxLength={2}
+                className={inputClassName}
                 onBlur={() => {
                     if (minutes.length > 0) {
                         setMinutes(minutes.padStart(2, '0'));
@@ -60,6 +66,7 @@ export function TimeInput({ onChange, initialMinutes = 0, initialSeconds = 0 }: 
                     setMinutes(updatedInput);
                 }}
             />
+            <span role="separator" className="py-3">:</span>
             <label htmlFor="second-input" role="second input label" className="sr-only">Seconds</label>
             <input
                 ref={secondRef}
@@ -70,8 +77,9 @@ export function TimeInput({ onChange, initialMinutes = 0, initialSeconds = 0 }: 
                 inputMode="numeric"
                 pattern="\d{2}"
                 role="second-input"
-                placeholder="00"
+                placeholder="ss"
                 maxLength={2}
+                className={inputClassName}
                 onBlur={() => {
                     if (seconds.length > 0) {
                         setSeconds(seconds.padStart(2, '0'));
@@ -84,6 +92,6 @@ export function TimeInput({ onChange, initialMinutes = 0, initialSeconds = 0 }: 
                     setSeconds(updatedInput);
                 }}
             />
-        </>
+        </div>
     );
 }
