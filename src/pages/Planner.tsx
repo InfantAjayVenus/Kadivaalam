@@ -39,17 +39,13 @@ export function Planner({ taskId = "" }: PlannerProps) {
             }
             {isAddFormOpen &&
                 <AddTask
-                    onAddTask={(title, description) => {
+                    onAddTask={(title, description, duration) => {
                         const id = nanoid();
                         const newTask: Task = {
                             id,
                             title,
                             description,
-                            duration: {
-                                hours: 0,
-                                minutes: 0,
-                                seconds: 0
-                            }
+                            duration 
                         }
 
                         addTask(newTask);
