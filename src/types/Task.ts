@@ -5,6 +5,5 @@ export interface Task {
     duration: {
         hours: number,
         minutes: number
-        seconds: number
     }
 }
