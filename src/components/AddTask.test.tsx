@@ -63,8 +63,15 @@ describe("AddTask", () => {
                 <AddTask
                     onAddTask={onAddTask}
                     onClose={onClose}
-                    taskTitle={taskData.title}
-                    taskDescription={taskData.description}
+                    task={{
+                        id: "mock-id",
+                        title: taskData.title,
+                        description: taskData.description,
+                        duration: {
+                            hours: 0,
+                            minutes: 35
+                        },
+                    }}
                 />
             )
         });

@@ -2,24 +2,35 @@ import { Check, X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import TextareaAutosize from "react-autosize-textarea";
 import { TimeInput } from "./TimeInput";
+import { Task } from "../types/Task";
 
 interface AddTaskProps {
-    taskTitle?: string;
-    taskDescription?: string;
+    task?: Task;
     onAddTask: (taskTitle: string, taskDescription: string, duration: { hours: number, minutes: number }) => void;
     onClose: () => void;
 }
 
-export function AddTask({ onAddTask, onClose, taskTitle = "", taskDescription = "" }: AddTaskProps) {
+export function AddTask({ 
+    onAddTask, 
+    onClose, 
+    task = {
+        id: "",
+        title: "",
+        description: "",
+        duration: { hours: 0, minutes: 0 },
+    } as Task 
+}: AddTaskProps) {
     const [title, setTitle] = useState("");
     const [description, setDescription] = useState("");
     const [duration, setDuration] = useState({ hours: 0, minutes: 0 });
     const inputRef = useRef<HTMLInputElement | null>(null);
 
     useEffect(() => {
-        setTitle(taskTitle);
-        setDescription(taskDescription);
-    }, [taskTitle, taskDescription]);
+        if(!task) return;
+        setTitle(task?.title);
+        setDescription(task?.description);
+        setDuration(task?.duration);
+    }, [task.title, task.description, task.duration.hours, task.duration.minutes]);
 
     return (
 
@@ -38,6 +49,7 @@ export function AddTask({ onAddTask, onClose, taskTitle = "", taskDescription = 
 
                 setTitle('');
                 setDescription('');
+                setDuration({ hours: 0, minutes: 0 });
                 inputRef.current?.focus();
             }}
         >
@@ -60,7 +72,7 @@ export function AddTask({ onAddTask, onClose, taskTitle = "", taskDescription = 
                     autoFocus
                     className="bg-background border-r border-secondary focus:outline-transparent focus:outline-0 px-2 py-3 flex-grow"
                 />
-                <TimeInput onChange={(hours, minutes) => setDuration({ hours, minutes })} />
+                <TimeInput initialDuration={duration} onDurationChange={(updatedDuration) => setDuration(updatedDuration)} />
 
             </div>
 
