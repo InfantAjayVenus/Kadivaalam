@@ -1,7 +1,7 @@
 import { Check, X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import TextareaAutosize from "react-autosize-textarea";
-import { TimeInput } from "./TimeInput";
+import { DurationInput } from "./DurationInput";
 import { Task } from "../types/Task";
 import { nanoid } from "nanoid/non-secure";
 
@@ -76,7 +76,7 @@ export function AddTask({
                     autoFocus
                     className="bg-background border-r border-secondary focus:outline-transparent focus:outline-0 px-2 py-3 flex-grow"
                 />
-                <TimeInput initialDuration={duration} resetSignal={resetSignal} onDurationChange={(updatedDuration) => setDuration(updatedDuration)} />
+                <DurationInput initialDuration={duration} resetSignal={resetSignal} onDurationChange={(updatedDuration) => setDuration(updatedDuration)} />
 
             </div>
 
