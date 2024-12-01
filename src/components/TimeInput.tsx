@@ -5,6 +5,7 @@ import { Duration } from "../types/Task";
 interface TimeInputProps {
     onDurationChange: (taskData: Duration) => void;
     initialDuration?: Duration;
+    resetSignal: string;
 };
 
 /**
@@ -22,7 +23,7 @@ function isValidNumber(input: string, limits:{min?: number, max?: number}={min: 
 }
 
 
-export function TimeInput({ onDurationChange, initialDuration = { hours: 0, minutes: 0 } }: TimeInputProps) {
+export function TimeInput({ onDurationChange, initialDuration = { hours: 0, minutes: 0 }, resetSignal }: TimeInputProps) {
 
     const [hours, setHours] = useState<string>(initialDuration.hours > 0 ? initialDuration.hours.toString().padStart(2, '0') : '');
     const [minutes, setMinutes] = useState<string>(initialDuration.minutes > 0 ? initialDuration.minutes.toString().padStart(2, '0') : '');
@@ -32,12 +33,17 @@ export function TimeInput({ onDurationChange, initialDuration = { hours: 0, minu
     const inputClassName = "bg-background outline-transparent px-2 py-3 max-w-10 text-center";
 
     useEffect(() => {
+        setHours('');
+        setMinutes('');
+    }, [resetSignal])
+
+    useEffect(() => {
 
         if ((hours === '' && minutes === '') || isNaN(parseInt(hours)) || isNaN(parseInt(minutes))) return;
 
         onDurationChange({ hours: parseInt(hours), minutes: parseInt(minutes) });
 
-    }, [debouncedHours, debouncedMinutes, onDurationChange])
+    }, [debouncedHours, debouncedMinutes, onDurationChange]);
 
     return (
         <div

@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import TextareaAutosize from "react-autosize-textarea";
 import { TimeInput } from "./TimeInput";
 import { Task } from "../types/Task";
+import { nanoid } from "nanoid/non-secure";
 
 interface AddTaskProps {
     task?: Task;
@@ -23,6 +24,8 @@ export function AddTask({
     const [title, setTitle] = useState("");
     const [description, setDescription] = useState("");
     const [duration, setDuration] = useState({ hours: 0, minutes: 0 });
+    const [resetSignal, setResetSignal] = useState(nanoid());
+
     const inputRef = useRef<HTMLInputElement | null>(null);
 
     useEffect(() => {
@@ -41,6 +44,7 @@ export function AddTask({
 
                 submitEvent.preventDefault();
                 onAddTask(title, description, duration);
+                setResetSignal(nanoid());
                 submitEvent.currentTarget.reset();
             }}
             onReset={(event) => {
@@ -72,7 +76,7 @@ export function AddTask({
                     autoFocus
                     className="bg-background border-r border-secondary focus:outline-transparent focus:outline-0 px-2 py-3 flex-grow"
                 />
-                <TimeInput initialDuration={duration} onDurationChange={(updatedDuration) => setDuration(updatedDuration)} />
+                <TimeInput initialDuration={duration} resetSignal={resetSignal} onDurationChange={(updatedDuration) => setDuration(updatedDuration)} />
 
             </div>
 
