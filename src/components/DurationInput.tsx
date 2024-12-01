@@ -5,7 +5,7 @@ import { Duration } from "../types/Task";
 interface TimeInputProps {
     onDurationChange: (taskData: Duration) => void;
     initialDuration?: Duration;
-    resetSignal: string;
+    resetSignal?: string;
 };
 
 /**
@@ -23,7 +23,7 @@ function isValidNumber(input: string, limits:{min?: number, max?: number}={min: 
 }
 
 
-export function TimeInput({ onDurationChange, initialDuration = { hours: 0, minutes: 0 }, resetSignal }: TimeInputProps) {
+export function DurationInput({ onDurationChange, initialDuration = { hours: 0, minutes: 0 }, resetSignal = '' }: TimeInputProps) {
 
     const [hours, setHours] = useState<string>(initialDuration.hours > 0 ? initialDuration.hours.toString().padStart(2, '0') : '');
     const [minutes, setMinutes] = useState<string>(initialDuration.minutes > 0 ? initialDuration.minutes.toString().padStart(2, '0') : '');

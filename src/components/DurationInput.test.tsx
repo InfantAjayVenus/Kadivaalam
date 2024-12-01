@@ -1,7 +1,7 @@
 import { cleanup, render, screen } from "@testing-library/react";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 import "@testing-library/jest-dom";
-import { TimeInput } from "./TimeInput";
+import { DurationInput } from "./DurationInput";
 import userEvent from "@testing-library/user-event";
 import { sleep } from "../lib/sleep";
 
@@ -13,7 +13,7 @@ describe("TimeInput validation and behaviour", () => {
 
     beforeEach(() => {
         cleanup();
-        render(<TimeInput onDurationChange={() => {}}/>);
+        render(<DurationInput onDurationChange={() => {}}/>);
     })
 
     it("should render", async () => {
@@ -75,7 +75,7 @@ describe("TimeInput data update", () => {
     describe("on change", () => {
         beforeEach(() => {
             cleanup();
-            render(<TimeInput onDurationChange={onChangeMock} />);
+            render(<DurationInput onDurationChange={onChangeMock} />);
         });
 
         it("should call onchange with the new value", async () => { 
@@ -90,7 +90,7 @@ describe("TimeInput data update", () => {
     describe("initial Values", () => {
         beforeEach(() => {
             cleanup();
-            render(<TimeInput onDurationChange={onChangeMock} initialDuration={initialValues} />);
+            render(<DurationInput onDurationChange={onChangeMock} initialDuration={initialValues} />);
         });
 
         it("should render the input with initial values", async () => {
