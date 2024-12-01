@@ -4,7 +4,14 @@ import { useState } from 'react';
 import { AddTask } from '../components/AddTask';
 import { TaskItem } from '../components/TaskItem';
 import { useTaskStore } from '../stores/taskStore';
-import { Task } from '../types/Task';
+import { Duration, Task } from '../types/Task';
+
+function normalizeDuration(duration: Duration): Duration {
+    const hours = duration.hours + Math.floor(duration.minutes / 60);
+    const minutes = duration.minutes % 60;
+
+    return { hours, minutes };
+}
 
 interface PlannerProps {
     taskId?: string;
@@ -15,9 +22,16 @@ export function Planner({ taskId = "" }: PlannerProps) {
     const [isAddFormOpen, setIsAddFormOpen] = useState(false);
     const { tasks: taskList, addTask } = useTaskStore();
 
+    const totalDuration: Duration = normalizeDuration(taskList.reduce((cummulativeDuration, currentTask) => {
+        return { hours: cummulativeDuration.hours + currentTask.duration?.hours || 0, minutes: cummulativeDuration.minutes + currentTask.duration?.minutes || 0 };
+    }, { hours: 0, minutes: 0 } as Duration));
+
     return (
         <main role="planner" className='overflow-y-hidden'>
-            <p role="task-counter" className='text-2xl mt-2 mb-6'>{taskList.length}</p>
+            <div role="task-list-info" className='flex justify-between mt-2 mb-6'>
+                <p role="task-counter" className='text-2xl '>{taskList.length}</p>
+                <p role="total-session-duration" className='text-2xl '>{totalDuration.hours.toString().padStart(2, '0')}h {totalDuration.minutes.toString().padStart(2, '0')}m</p>
+            </div>
             {(!isAddFormOpen && taskList.length === 0) &&
                 <ol
                     role="task-advice-list"
@@ -45,7 +59,7 @@ export function Planner({ taskId = "" }: PlannerProps) {
                             id,
                             title,
                             description,
-                            duration 
+                            duration
                         }
 
                         addTask(newTask);
