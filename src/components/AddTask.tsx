@@ -1,9 +1,8 @@
 import { Check, X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import TextareaAutosize from "react-autosize-textarea";
-import { DurationInput } from "./DurationInput";
+import { useTimescape } from "timescape/react";
 import { Task } from "../types/Task";
-import { nanoid } from "nanoid/non-secure";
 
 interface AddTaskProps {
     task?: Task;
@@ -24,7 +23,21 @@ export function AddTask({
     const [title, setTitle] = useState("");
     const [description, setDescription] = useState("");
     const [duration, setDuration] = useState({ hours: 0, minutes: 0 });
-    const [resetSignal, setResetSignal] = useState(nanoid());
+    const {getRootProps, getInputProps, update} = useTimescape({
+        date: (() => {
+            const hours = task?.duration?.hours || 0;
+            const minutes = task?.duration?.minutes || 0;
+            return new Date(0, 0, 0, hours, minutes);
+        })(),
+        digits: '2-digit',
+        onChangeDate: (nextDate) => {
+            if(!nextDate) return;
+            const hours = nextDate.getHours();
+            const minutes = nextDate.getMinutes();
+
+            setDuration({ hours, minutes });
+        }
+    });
 
     const inputRef = useRef<HTMLInputElement | null>(null);
 
@@ -44,7 +57,6 @@ export function AddTask({
 
                 submitEvent.preventDefault();
                 onAddTask(title, description, duration);
-                setResetSignal(nanoid());
                 submitEvent.currentTarget.reset();
             }}
             onReset={(event) => {
@@ -54,6 +66,7 @@ export function AddTask({
                 setTitle('');
                 setDescription('');
                 setDuration({ hours: 0, minutes: 0 });
+                update((prev) => ({...prev, date: new Date(0, 0, 0, 0, 0)}))
                 inputRef.current?.focus();
             }}
         >
@@ -76,7 +89,11 @@ export function AddTask({
                     autoFocus
                     className="bg-background border-r border-secondary focus:outline-transparent focus:outline-0 px-2 py-3 flex-grow"
                 />
-                <DurationInput initialDuration={duration} resetSignal={resetSignal} onDurationChange={(updatedDuration) => setDuration(updatedDuration)} />
+                <div {...getRootProps()} aria-label="time-input-group" className="flex bg-background w-min">
+                    <input {...getInputProps('hours')} type="text" placeholder="hh" aria-label="task-duration-hour-input" className="bg-background outline-transparent px-2 py-3 min-w-8 text-center" />
+                    <span role="separator" className="py-3">:</span>
+                    <input {...getInputProps('minutes')} type="text" aria-label="task-duration-minute-input" className="bg-background outline-transparent px-2 py-3 min-w-8 text-center" />
+                </div>
 
             </div>
 

@@ -1,17 +1,23 @@
 import '@testing-library/jest-dom';
 import { cleanup, render, screen } from '@testing-library/react';
-import { it, describe, expect, beforeEach, vi, afterEach, } from 'vitest';
-import { AddTask } from './AddTask';
 import userEvent from '@testing-library/user-event';
+import { afterEach, beforeEach, describe, expect, it, vi, } from 'vitest';
+import { AddTask } from './AddTask';
 
 
 describe("AddTask", () => {
     const taskData = {
         title: "Title",
         description: "Description",
+        duration: {
+            hours: 1,
+            minutes: 12
+        }
     }
     const taskTitleInputRole = "task-title-input";
     const taskDescriptionInputRole = "task-description-input";
+    const taskDurationHourInputLabel = "hours";
+    const taskDurationMinuteInputLabel = "minutes";
     const submitTaskButtonRole = "submit-task-button";
     const abortAddTaskButtonRole = "abort-add-task-button";
 
@@ -43,12 +49,16 @@ describe("AddTask", () => {
 
             await screen.findByRole(taskTitleInputRole);
             await screen.findByRole(taskDescriptionInputRole);
+            await screen.findByLabelText(taskDurationHourInputLabel);
+            await screen.findByLabelText(taskDurationMinuteInputLabel);
             await screen.findByRole(submitTaskButtonRole);
             await screen.findByRole(abortAddTaskButtonRole);
 
             expect(screen.getByRole(taskTitleInputRole)).toBeInTheDocument();
             expect(screen.getByRole(taskTitleInputRole)).toHaveFocus();
             expect(screen.getByRole(taskDescriptionInputRole)).toBeInTheDocument();
+            expect(screen.getByLabelText(taskDurationHourInputLabel)).toBeInTheDocument();
+            expect(screen.getByLabelText(taskDurationMinuteInputLabel)).toBeInTheDocument();
             expect(screen.getByRole(submitTaskButtonRole)).toBeInTheDocument();
             expect(screen.getByRole(abortAddTaskButtonRole)).toBeInTheDocument();
         });
@@ -68,8 +78,8 @@ describe("AddTask", () => {
                         title: taskData.title,
                         description: taskData.description,
                         duration: {
-                            hours: 0,
-                            minutes: 35
+                            hours: taskData.duration.hours,
+                            minutes: taskData.duration.minutes,
                         },
                     }}
                 />
@@ -84,9 +94,13 @@ describe("AddTask", () => {
 
             await screen.findByRole(taskTitleInputRole);
             await screen.findByRole(taskDescriptionInputRole);
+            await screen.findByLabelText(taskDurationHourInputLabel);
+            await screen.findByLabelText(taskDurationHourInputLabel);
 
             expect(screen.getByRole(taskTitleInputRole)).toHaveValue(taskData.title);
             expect(screen.getByRole(taskDescriptionInputRole)).toHaveValue(taskData.description);
+            expect(screen.getByLabelText(taskDurationHourInputLabel)).toHaveValue(taskData.duration.hours.toString().padStart(2, '0'));
+            expect(screen.getByLabelText(taskDurationMinuteInputLabel)).toHaveValue(taskData.duration.minutes.toString().padStart(2, '0'));
         });
     });
 
