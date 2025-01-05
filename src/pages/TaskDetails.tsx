@@ -1,14 +1,14 @@
 import { Pencil, Trash, X } from "lucide-react";
-import { Link, useParams } from "react-router-dom";
-import { useTaskStore } from "../stores/taskStore";
-import { Planner } from "./Planner";
 import { useState } from "react";
+import { Link, useParams } from "react-router-dom";
 import { AddTask } from "../components/AddTask";
+import { useTaskStore } from "../stores/taskStore";
 import { Task } from "../types/Task";
+import { Planner } from "./Planner";
 
 export function TaskDetails() {
     const { taskId } = useParams<{ taskId: string }>();
-    const activeTask = useTaskStore((state) => state.tasks.find((task) => task.id === taskId));
+    const activeTask = useTaskStore((state) => state.tasks.find((task) => task.id === taskId));    
     const { removeTask, updateTask } = useTaskStore();
     const [isEdit, setIsEdit] = useState(false);
 
@@ -17,14 +17,14 @@ export function TaskDetails() {
             <Planner taskId={taskId} />
             {activeTask &&
                 <aside className='fixed top-0 right-0 h-full w-full lg:w-1/5 border border-l-2 py-8 px-4 flex flex-col bg-background'>
-                    {isEdit && 
-                        <AddTask 
+                    {isEdit &&
+                        <AddTask
                             task={activeTask}
                             onAddTask={(title, description, duration) => {
                                 updateTask({ id: taskId, title, description, duration } as Task)
                                 setIsEdit(false);
-                            }} 
-                            onClose={() => setIsEdit(false)} 
+                            }}
+                            onClose={() => setIsEdit(false)}
                         />
                     }
                     {!isEdit &&
