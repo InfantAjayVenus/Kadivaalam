@@ -40,6 +40,7 @@ export function TaskDetails() {
                             <p role="active-task-description">{activeTask.description}</p>
                             <div role="button-group" className="absolute bottom-4 left-1/2 -translate-x-1/2 flex flex-col gap-2">
                                 <button
+                                    role="edit-task-button"
                                     className=" mx-auto flex items-center gap-2 border border-foreground py-2 px-4 rounded-lg "
                                     onClick={() => setIsEdit(true)}
                                 >
