@@ -22,8 +22,8 @@ export function Planner({ taskId = "" }: PlannerProps) {
     const [isAddFormOpen, setIsAddFormOpen] = useState(false);
     const { tasks: taskList, addTask } = useTaskStore();
 
-    const totalDuration: Duration = normalizeDuration(taskList.reduce((cummulativeDuration, currentTask) => {
-        return { hours: cummulativeDuration.hours + currentTask.duration?.hours || 0, minutes: cummulativeDuration.minutes + currentTask.duration?.minutes || 0 };
+    const totalDuration: Duration = normalizeDuration(taskList.reduce((cumulativeDuration, currentTask) => {
+        return { hours: cumulativeDuration.hours + currentTask.duration?.hours || 0, minutes: cumulativeDuration.minutes + currentTask.duration?.minutes || 0 };
     }, { hours: 0, minutes: 0 } as Duration));
 
     return (
