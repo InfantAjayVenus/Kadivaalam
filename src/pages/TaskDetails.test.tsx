@@ -142,7 +142,7 @@ describe("TaskDetails should", () => {
 
         const updatedTask = {
             title: "Task 1 updated",
-            description: "Task 1 description updated",
+            description: "Task 1 description",
             duration: {
                 hours: 2,
                 minutes: 0,
