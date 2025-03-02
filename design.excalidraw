@@ -68,8 +68,8 @@
     },
     {
       "type": "text",
-      "version": 576,
-      "versionNonce": 2145368909,
+      "version": 577,
+      "versionNonce": 938958352,
       "isDeleted": false,
       "id": "GL6aufCacMdH4iD4dNk8H",
       "fillStyle": "solid",
@@ -89,7 +89,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1736296852586,
+      "updated": 1740913893506,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -100,7 +100,7 @@
       "containerId": null,
       "originalText": "Kadivaalam",
       "lineHeight": 1.2,
-      "baseline": 19
+      "baseline": 20
     },
     {
       "type": "line",
@@ -148,8 +148,8 @@
     },
     {
       "type": "text",
-      "version": 656,
-      "versionNonce": 1212467629,
+      "version": 657,
+      "versionNonce": 1816218352,
       "isDeleted": false,
       "id": "u1Vlh99LU5JC9WvaZ9TqO",
       "fillStyle": "solid",
@@ -169,7 +169,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1736296852586,
+      "updated": 1740913893506,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -180,12 +180,12 @@
       "containerId": null,
       "originalText": "99:99",
       "lineHeight": 1.2,
-      "baseline": 19
+      "baseline": 20
     },
     {
       "type": "text",
-      "version": 601,
-      "versionNonce": 1653060515,
+      "version": 602,
+      "versionNonce": 1803623440,
       "isDeleted": false,
       "id": "Ix_1pNAYVYrQyaiWzR2qm",
       "fillStyle": "solid",
@@ -205,7 +205,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1736296852586,
+      "updated": 1740913893506,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -216,12 +216,12 @@
       "containerId": null,
       "originalText": "99:99",
       "lineHeight": 1.2,
-      "baseline": 19
+      "baseline": 20
     },
     {
       "type": "text",
-      "version": 552,
-      "versionNonce": 834210829,
+      "version": 553,
+      "versionNonce": 1572498672,
       "isDeleted": false,
       "id": "wBxDsoQCUL1CdNozT-vo5",
       "fillStyle": "solid",
@@ -241,7 +241,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1736296852586,
+      "updated": 1740913893507,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -252,12 +252,12 @@
       "containerId": null,
       "originalText": "Task Item 1",
       "lineHeight": 1.2,
-      "baseline": 19
+      "baseline": 20
     },
     {
       "type": "text",
-      "version": 682,
-      "versionNonce": 725043011,
+      "version": 683,
+      "versionNonce": 1126373904,
       "isDeleted": false,
       "id": "BNJMpWXvOJ4o79RkZoYRV",
       "fillStyle": "solid",
@@ -277,7 +277,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1736296852586,
+      "updated": 1740913893507,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -288,7 +288,7 @@
       "containerId": null,
       "originalText": "99:99",
       "lineHeight": 1.2,
-      "baseline": 19
+      "baseline": 20
     },
     {
       "type": "ellipse",
@@ -321,8 +321,8 @@
     },
     {
       "type": "text",
-      "version": 639,
-      "versionNonce": 1274242787,
+      "version": 640,
+      "versionNonce": 1203719920,
       "isDeleted": false,
       "id": "AUJS8yFh59Siw8Am-FiZd",
       "fillStyle": "solid",
@@ -342,7 +342,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1736296852586,
+      "updated": 1740913893507,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -353,7 +353,7 @@
       "containerId": null,
       "originalText": "Task Item 1",
       "lineHeight": 1.2,
-      "baseline": 19
+      "baseline": 20
     },
     {
       "type": "rectangle",
@@ -386,8 +386,8 @@
     },
     {
       "type": "text",
-      "version": 770,
-      "versionNonce": 726307459,
+      "version": 771,
+      "versionNonce": 299194384,
       "isDeleted": false,
       "id": "7eNI1Dqehl-4w7sjPMu_O",
       "fillStyle": "solid",
@@ -407,7 +407,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1736296852586,
+      "updated": 1740913893507,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -418,7 +418,7 @@
       "containerId": null,
       "originalText": "99:99",
       "lineHeight": 1.2,
-      "baseline": 19
+      "baseline": 20
     },
     {
       "type": "ellipse",
@@ -451,8 +451,8 @@
     },
     {
       "type": "text",
-      "version": 606,
-      "versionNonce": 1509640739,
+      "version": 607,
+      "versionNonce": 584577264,
       "isDeleted": false,
       "id": "8jKc4aIFjekB37q85AhU8",
       "fillStyle": "solid",
@@ -472,7 +472,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1736296852586,
+      "updated": 1740913893507,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -483,7 +483,7 @@
       "containerId": null,
       "originalText": "Task Item 1",
       "lineHeight": 1.2,
-      "baseline": 19
+      "baseline": 20
     },
     {
       "type": "rectangle",
@@ -516,8 +516,8 @@
     },
     {
       "type": "text",
-      "version": 737,
-      "versionNonce": 1291062723,
+      "version": 738,
+      "versionNonce": 193975824,
       "isDeleted": false,
       "id": "yhAo5tODROBfmVktnzqc0",
       "fillStyle": "solid",
@@ -537,7 +537,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1736296852586,
+      "updated": 1740913893507,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -548,7 +548,7 @@
       "containerId": null,
       "originalText": "99:99",
       "lineHeight": 1.2,
-      "baseline": 19
+      "baseline": 20
     },
     {
       "type": "ellipse",
@@ -581,8 +581,8 @@
     },
     {
       "type": "text",
-      "version": 616,
-      "versionNonce": 1465081187,
+      "version": 617,
+      "versionNonce": 378295024,
       "isDeleted": false,
       "id": "LKOKBRVQk5WIqte-ccvqT",
       "fillStyle": "solid",
@@ -602,7 +602,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1736296852587,
+      "updated": 1740913893507,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -613,7 +613,7 @@
       "containerId": null,
       "originalText": "Task Item 1",
       "lineHeight": 1.2,
-      "baseline": 19
+      "baseline": 20
     },
     {
       "type": "rectangle",
@@ -646,8 +646,8 @@
     },
     {
       "type": "text",
-      "version": 747,
-      "versionNonce": 1684519171,
+      "version": 748,
+      "versionNonce": 625644560,
       "isDeleted": false,
       "id": "KEBKU7DpyXh-f6tYQZtIG",
       "fillStyle": "solid",
@@ -667,7 +667,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1736296852587,
+      "updated": 1740913893507,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -678,7 +678,7 @@
       "containerId": null,
       "originalText": "99:99",
       "lineHeight": 1.2,
-      "baseline": 19
+      "baseline": 20
     },
     {
       "type": "ellipse",
@@ -755,8 +755,8 @@
     },
     {
       "type": "text",
-      "version": 380,
-      "versionNonce": 2064805645,
+      "version": 381,
+      "versionNonce": 426013936,
       "isDeleted": false,
       "id": "QiY-jkubn97xiPUHJH1ag",
       "fillStyle": "solid",
@@ -776,7 +776,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1736296852587,
+      "updated": 1740913893507,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -787,12 +787,12 @@
       "containerId": null,
       "originalText": "Task Item 1",
       "lineHeight": 1.2,
-      "baseline": 19
+      "baseline": 20
     },
     {
       "type": "text",
-      "version": 1271,
-      "versionNonce": 770794459,
+      "version": 1272,
+      "versionNonce": 1962775056,
       "isDeleted": false,
       "id": "httWlDD4oliDiw4sDAVxV",
       "fillStyle": "solid",
@@ -805,14 +805,14 @@
       "y": 848.8043649999998,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "#1e1e1e",
-      "width": 233.843994140625,
+      "width": 233.982421875,
       "height": 213.00390625000003,
       "seed": 788783944,
       "groupIds": [],
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1737426437191,
+      "updated": 1740913893507,
       "link": null,
       "locked": false,
       "fontSize": 14.79193793402778,
@@ -827,8 +827,8 @@
     },
     {
       "type": "text",
-      "version": 710,
-      "versionNonce": 2053834093,
+      "version": 711,
+      "versionNonce": 283662064,
       "isDeleted": false,
       "id": "sGMNrZk95_0hzZfrkhJq9",
       "fillStyle": "solid",
@@ -848,7 +848,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1736296852587,
+      "updated": 1740913893507,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -859,7 +859,7 @@
       "containerId": null,
       "originalText": "0",
       "lineHeight": 1.2,
-      "baseline": 19
+      "baseline": 20
     },
     {
       "type": "line",
@@ -907,8 +907,8 @@
     },
     {
       "type": "text",
-      "version": 668,
-      "versionNonce": 52547533,
+      "version": 669,
+      "versionNonce": 295751696,
       "isDeleted": false,
       "id": "gv7HyVQiwvmAFygG0NESg",
       "fillStyle": "solid",
@@ -928,7 +928,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1736296852587,
+      "updated": 1740913893507,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -939,12 +939,12 @@
       "containerId": null,
       "originalText": "4",
       "lineHeight": 1.2,
-      "baseline": 19
+      "baseline": 20
     },
     {
       "type": "text",
-      "version": 571,
-      "versionNonce": 1865128789,
+      "version": 572,
+      "versionNonce": 1906309360,
       "isDeleted": false,
       "id": "tjCcRb-kWkah-UfVU9vg2",
       "fillStyle": "solid",
@@ -957,14 +957,14 @@
       "y": 790.72606275,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
-      "width": 42.421875,
+      "width": 34,
       "height": 40.8057131999999,
       "seed": 282177080,
       "groupIds": [],
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1737426437194,
+      "updated": 1740913893508,
       "link": null,
       "locked": false,
       "fontSize": 34.00476099999992,
@@ -975,7 +975,7 @@
       "containerId": null,
       "originalText": "⏸️",
       "lineHeight": 1.2,
-      "baseline": 32
+      "baseline": 33
     },
     {
       "type": "ellipse",
@@ -1008,8 +1008,8 @@
     },
     {
       "type": "text",
-      "version": 523,
-      "versionNonce": 591705891,
+      "version": 524,
+      "versionNonce": 1932283408,
       "isDeleted": false,
       "id": "y25keyCc2MgwAKVq7hxyU",
       "fillStyle": "solid",
@@ -1022,14 +1022,14 @@
       "y": 799.1289193499999,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
-      "width": 24.953125,
+      "width": 22,
       "height": 24,
       "seed": 1573574472,
       "groupIds": [],
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1736296852587,
+      "updated": 1740913893508,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -1040,7 +1040,7 @@
       "containerId": null,
       "originalText": "❗",
       "lineHeight": 1.2,
-      "baseline": 19
+      "baseline": 20
     },
     {
       "type": "line",
@@ -1088,8 +1088,8 @@
     },
     {
       "type": "text",
-      "version": 422,
-      "versionNonce": 1686624963,
+      "version": 423,
+      "versionNonce": 1595103984,
       "isDeleted": false,
       "id": "EBih9LsGs0DNTDGrACDQG",
       "fillStyle": "solid",
@@ -1109,7 +1109,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1736296852587,
+      "updated": 1740913893508,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -1120,12 +1120,12 @@
       "containerId": null,
       "originalText": "Session Log",
       "lineHeight": 1.2,
-      "baseline": 19
+      "baseline": 20
     },
     {
       "type": "text",
-      "version": 349,
-      "versionNonce": 527315067,
+      "version": 350,
+      "versionNonce": 1385696272,
       "isDeleted": false,
       "id": "1K_IQBDNYCwReCIPpKo5y",
       "fillStyle": "solid",
@@ -1138,14 +1138,14 @@
       "y": 846.1347778176182,
       "strokeColor": "#868e96",
       "backgroundColor": "transparent",
-      "width": 117.1142578125,
+      "width": 117.2109375,
       "height": 20.011417168565185,
       "seed": 1046775864,
       "groupIds": [],
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1737426437199,
+      "updated": 1740913893508,
       "link": null,
       "locked": false,
       "fontSize": 16.67618097380432,
@@ -1160,8 +1160,8 @@
     },
     {
       "type": "text",
-      "version": 313,
-      "versionNonce": 2049403061,
+      "version": 314,
+      "versionNonce": 1271561456,
       "isDeleted": false,
       "id": "jEQgXrPht5tBF2mNAo5pP",
       "fillStyle": "solid",
@@ -1174,14 +1174,14 @@
       "y": 846.1347778176182,
       "strokeColor": "#868e96",
       "backgroundColor": "transparent",
-      "width": 48.797607421875,
+      "width": 48.837890625,
       "height": 20.011417168565185,
       "seed": 151165240,
       "groupIds": [],
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1737426437200,
+      "updated": 1740913893508,
       "link": null,
       "locked": false,
       "fontSize": 16.67618097380432,
@@ -1196,8 +1196,8 @@
     },
     {
       "type": "text",
-      "version": 368,
-      "versionNonce": 753428763,
+      "version": 369,
+      "versionNonce": 165415440,
       "isDeleted": false,
       "id": "H7Xxg4yq-gjOFIJ7Ol38_",
       "fillStyle": "solid",
@@ -1210,14 +1210,14 @@
       "y": 890.5822758913723,
       "strokeColor": "#868e96",
       "backgroundColor": "transparent",
-      "width": 48.797607421875,
+      "width": 48.837890625,
       "height": 20.011417168565185,
       "seed": 1263092296,
       "groupIds": [],
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1737426437200,
+      "updated": 1740913893508,
       "link": null,
       "locked": false,
       "fontSize": 16.67618097380432,
@@ -1232,8 +1232,8 @@
     },
     {
       "type": "text",
-      "version": 360,
-      "versionNonce": 1124239893,
+      "version": 361,
+      "versionNonce": 424500976,
       "isDeleted": false,
       "id": "p4-N71V6i2l4NQSt1FI-2",
       "fillStyle": "solid",
@@ -1246,14 +1246,14 @@
       "y": 890.5822758913723,
       "strokeColor": "#868e96",
       "backgroundColor": "transparent",
-      "width": 48.797607421875,
+      "width": 48.837890625,
       "height": 20.011417168565185,
       "seed": 1685698888,
       "groupIds": [],
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1737426437200,
+      "updated": 1740913893508,
       "link": null,
       "locked": false,
       "fontSize": 16.67618097380432,
@@ -1268,8 +1268,8 @@
     },
     {
       "type": "text",
-      "version": 375,
-      "versionNonce": 1272090043,
+      "version": 376,
+      "versionNonce": 1945126928,
       "isDeleted": false,
       "id": "pvI8799EMH76rP7O11qe4",
       "fillStyle": "solid",
@@ -1282,14 +1282,14 @@
       "y": 931.8322888913723,
       "strokeColor": "#868e96",
       "backgroundColor": "transparent",
-      "width": 117.1142578125,
+      "width": 117.2109375,
       "height": 20.011417168565185,
       "seed": 1170739784,
       "groupIds": [],
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1737426437200,
+      "updated": 1740913893508,
       "link": null,
       "locked": false,
       "fontSize": 16.67618097380432,
@@ -1304,8 +1304,8 @@
     },
     {
       "type": "text",
-      "version": 368,
-      "versionNonce": 2058518389,
+      "version": 369,
+      "versionNonce": 941883632,
       "isDeleted": false,
       "id": "bKuFnFvUbAWHbMzBxP1iJ",
       "fillStyle": "solid",
@@ -1318,14 +1318,14 @@
       "y": 931.8322888913723,
       "strokeColor": "#868e96",
       "backgroundColor": "transparent",
-      "width": 48.797607421875,
+      "width": 48.837890625,
       "height": 20.011417168565185,
       "seed": 1184794952,
       "groupIds": [],
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1737426437200,
+      "updated": 1740913893508,
       "link": null,
       "locked": false,
       "fontSize": 16.67618097380432,
@@ -1589,8 +1589,8 @@
     },
     {
       "type": "text",
-      "version": 719,
-      "versionNonce": 714155043,
+      "version": 720,
+      "versionNonce": 1288488464,
       "isDeleted": false,
       "id": "YIEiifnJGhXHC22Sg127n",
       "fillStyle": "solid",
@@ -1612,7 +1612,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1736296852588,
+      "updated": 1740913893509,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -1623,7 +1623,7 @@
       "containerId": null,
       "originalText": "Kadivaalam",
       "lineHeight": 1.2,
-      "baseline": 19
+      "baseline": 20
     },
     {
       "type": "line",
@@ -1778,8 +1778,8 @@
     },
     {
       "type": "text",
-      "version": 175,
-      "versionNonce": 737748045,
+      "version": 176,
+      "versionNonce": 1205232368,
       "isDeleted": false,
       "id": "wcwfNXWYyIt7NBnAU4v9K",
       "fillStyle": "solid",
@@ -1801,7 +1801,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1736296852588,
+      "updated": 1740913893509,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -1812,12 +1812,12 @@
       "containerId": null,
       "originalText": "1. Create a list of focussed tasks",
       "lineHeight": 1.2,
-      "baseline": 19
+      "baseline": 20
     },
     {
       "type": "text",
-      "version": 320,
-      "versionNonce": 114545411,
+      "version": 321,
+      "versionNonce": 292127760,
       "isDeleted": false,
       "id": "9Wyvq-Dr4i4J481rWJYdc",
       "fillStyle": "solid",
@@ -1839,7 +1839,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1736296852588,
+      "updated": 1740913893509,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -1850,12 +1850,12 @@
       "containerId": null,
       "originalText": "2. Set a time for each task or the whole session",
       "lineHeight": 1.2,
-      "baseline": 19
+      "baseline": 20
     },
     {
       "type": "text",
-      "version": 437,
-      "versionNonce": 1598624429,
+      "version": 438,
+      "versionNonce": 921470192,
       "isDeleted": false,
       "id": "ViSFGFAsAoeGN8sc17T6A",
       "fillStyle": "solid",
@@ -1877,7 +1877,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1736296852588,
+      "updated": 1740913893509,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -1888,7 +1888,7 @@
       "containerId": null,
       "originalText": "3. Start the session and get productive",
       "lineHeight": 1.2,
-      "baseline": 19
+      "baseline": 20
     },
     {
       "type": "arrow",
@@ -1984,8 +1984,8 @@
     },
     {
       "type": "text",
-      "version": 1146,
-      "versionNonce": 2122788419,
+      "version": 1147,
+      "versionNonce": 1606320656,
       "isDeleted": false,
       "id": "6lTo7jcPrcYzKxeBcAGhq",
       "fillStyle": "solid",
@@ -2007,7 +2007,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1736296852588,
+      "updated": 1740913893509,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -2018,7 +2018,7 @@
       "containerId": null,
       "originalText": "Kadivaalam",
       "lineHeight": 1.2,
-      "baseline": 19
+      "baseline": 20
     },
     {
       "type": "line",
@@ -2142,8 +2142,8 @@
     },
     {
       "type": "text",
-      "version": 908,
-      "versionNonce": 453818755,
+      "version": 909,
+      "versionNonce": 1659791088,
       "isDeleted": false,
       "id": "tP6cmvSZy_5JgT9GAycxx",
       "fillStyle": "solid",
@@ -2165,7 +2165,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1736296852588,
+      "updated": 1740913893509,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -2176,12 +2176,12 @@
       "containerId": null,
       "originalText": "45:00",
       "lineHeight": 1.2,
-      "baseline": 19
+      "baseline": 20
     },
     {
       "type": "text",
-      "version": 825,
-      "versionNonce": 1951913005,
+      "version": 826,
+      "versionNonce": 1455669264,
       "isDeleted": false,
       "id": "xtPbMSHGp8EeQXGIhQSkq",
       "fillStyle": "solid",
@@ -2203,7 +2203,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1736296852588,
+      "updated": 1740913893509,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -2214,7 +2214,7 @@
       "containerId": null,
       "originalText": "0",
       "lineHeight": 1.2,
-      "baseline": 19
+      "baseline": 20
     },
     {
       "type": "rectangle",
@@ -2297,8 +2297,8 @@
     },
     {
       "type": "text",
-      "version": 345,
-      "versionNonce": 295204035,
+      "version": 346,
+      "versionNonce": 946079984,
       "isDeleted": false,
       "id": "YjO0mVHo0vUxGX6_K3qpV",
       "fillStyle": "solid",
@@ -2321,7 +2321,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1736296852589,
+      "updated": 1740913893509,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -2332,12 +2332,12 @@
       "containerId": null,
       "originalText": "Enter Task Title Here",
       "lineHeight": 1.2,
-      "baseline": 19
+      "baseline": 20
     },
     {
       "type": "text",
-      "version": 392,
-      "versionNonce": 1239969005,
+      "version": 393,
+      "versionNonce": 1987132944,
       "isDeleted": false,
       "id": "xBjxq-n-LNplys-Ka_tpg",
       "fillStyle": "solid",
@@ -2360,7 +2360,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1736296852589,
+      "updated": 1740913893509,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -2371,7 +2371,7 @@
       "containerId": null,
       "originalText": "Enter Task Description here",
       "lineHeight": 1.2,
-      "baseline": 19
+      "baseline": 20
     },
     {
       "type": "rectangle",
@@ -2527,8 +2527,8 @@
     },
     {
       "type": "text",
-      "version": 349,
-      "versionNonce": 1614374819,
+      "version": 350,
+      "versionNonce": 1389718256,
       "isDeleted": false,
       "id": "_Rh8_YgYeEH1AgbbDQ-7C",
       "fillStyle": "solid",
@@ -2551,7 +2551,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1736296852589,
+      "updated": 1740913893509,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -2562,7 +2562,7 @@
       "containerId": null,
       "originalText": "00:00",
       "lineHeight": 1.2,
-      "baseline": 19
+      "baseline": 20
     },
     {
       "type": "rectangle",
@@ -2640,8 +2640,8 @@
     },
     {
       "type": "text",
-      "version": 352,
-      "versionNonce": 1951927917,
+      "version": 353,
+      "versionNonce": 2143222800,
       "isDeleted": false,
       "id": "pYRpMPhJkpWj-R_RnEJ-F",
       "fillStyle": "solid",
@@ -2663,7 +2663,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1736296852589,
+      "updated": 1740913893509,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -2674,7 +2674,7 @@
       "containerId": null,
       "originalText": "15:00",
       "lineHeight": 1.2,
-      "baseline": 19
+      "baseline": 20
     },
     {
       "type": "rectangle",
@@ -2752,8 +2752,8 @@
     },
     {
       "type": "text",
-      "version": 385,
-      "versionNonce": 308856451,
+      "version": 386,
+      "versionNonce": 483036400,
       "isDeleted": false,
       "id": "P88AuZ7zRkCiHTCNg2Kht",
       "fillStyle": "solid",
@@ -2775,7 +2775,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1736296852589,
+      "updated": 1740913893509,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -2786,7 +2786,7 @@
       "containerId": null,
       "originalText": "30:00",
       "lineHeight": 1.2,
-      "baseline": 19
+      "baseline": 20
     },
     {
       "type": "arrow",
@@ -2934,8 +2934,8 @@
     },
     {
       "type": "text",
-      "version": 1080,
-      "versionNonce": 18170307,
+      "version": 1081,
+      "versionNonce": 1420098064,
       "isDeleted": false,
       "id": "7soeil5krcYgkQ51K8tdI",
       "fillStyle": "solid",
@@ -2957,7 +2957,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1736296852589,
+      "updated": 1740913893509,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -2968,7 +2968,7 @@
       "containerId": null,
       "originalText": "Kadivaalam",
       "lineHeight": 1.2,
-      "baseline": 19
+      "baseline": 20
     },
     {
       "type": "line",
@@ -3092,8 +3092,8 @@
     },
     {
       "type": "text",
-      "version": 838,
-      "versionNonce": 1087106307,
+      "version": 839,
+      "versionNonce": 1875603184,
       "isDeleted": false,
       "id": "r_Jm-Lx-dcm4e0Pdg9oJD",
       "fillStyle": "solid",
@@ -3115,7 +3115,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1736296852589,
+      "updated": 1740913893509,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -3126,12 +3126,12 @@
       "containerId": null,
       "originalText": "00:00",
       "lineHeight": 1.2,
-      "baseline": 19
+      "baseline": 20
     },
     {
       "type": "text",
-      "version": 759,
-      "versionNonce": 1945606317,
+      "version": 760,
+      "versionNonce": 1478178832,
       "isDeleted": false,
       "id": "uJNXjlPmQ4-lG-05LS5NC",
       "fillStyle": "solid",
@@ -3153,7 +3153,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1736296852590,
+      "updated": 1740913893509,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -3164,12 +3164,12 @@
       "containerId": null,
       "originalText": "0",
       "lineHeight": 1.2,
-      "baseline": 19
+      "baseline": 20
     },
     {
       "type": "text",
-      "version": 197,
-      "versionNonce": 460149923,
+      "version": 198,
+      "versionNonce": 878711024,
       "isDeleted": false,
       "id": "i9Fgd2sfTB7V9f0Ys-Cq0",
       "fillStyle": "solid",
@@ -3191,7 +3191,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1736296852590,
+      "updated": 1740913893509,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -3202,12 +3202,12 @@
       "containerId": null,
       "originalText": "1. Create Tasks by adding a title, description and time for the task",
       "lineHeight": 1.2,
-      "baseline": 19
+      "baseline": 20
     },
     {
       "type": "text",
-      "version": 240,
-      "versionNonce": 473561869,
+      "version": 241,
+      "versionNonce": 1310307856,
       "isDeleted": false,
       "id": "j72KLlLiGSnpV2AEWTB79",
       "fillStyle": "solid",
@@ -3229,7 +3229,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1736296852590,
+      "updated": 1740913893509,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -3240,7 +3240,7 @@
       "containerId": null,
       "originalText": "2. Be as specific as possible with each task",
       "lineHeight": 1.2,
-      "baseline": 19
+      "baseline": 20
     },
     {
       "type": "rectangle",
@@ -3273,8 +3273,8 @@
     },
     {
       "type": "text",
-      "version": 641,
-      "versionNonce": 650187117,
+      "version": 642,
+      "versionNonce": 34632432,
       "isDeleted": false,
       "id": "j9jfGaAk8ECEJVxqnAQxR",
       "fillStyle": "solid",
@@ -3294,7 +3294,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1736296852590,
+      "updated": 1740913893509,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -3305,7 +3305,7 @@
       "containerId": null,
       "originalText": "Kadivaalam",
       "lineHeight": 1.2,
-      "baseline": 19
+      "baseline": 20
     },
     {
       "type": "line",
@@ -3397,8 +3397,8 @@
     },
     {
       "type": "text",
-      "version": 649,
-      "versionNonce": 525278811,
+      "version": 650,
+      "versionNonce": 999846928,
       "isDeleted": false,
       "id": "FFcfqmB482QRgVbwlG6JV",
       "fillStyle": "solid",
@@ -3411,14 +3411,14 @@
       "y": 2592.9457618285683,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
-      "width": 42.421875,
+      "width": 34,
       "height": 40.8057131999999,
       "seed": 1629358531,
       "groupIds": [],
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1737426437205,
+      "updated": 1740913893509,
       "link": null,
       "locked": false,
       "fontSize": 34.00476099999992,
@@ -3429,7 +3429,7 @@
       "containerId": null,
       "originalText": "⏸️",
       "lineHeight": 1.2,
-      "baseline": 32
+      "baseline": 33
     },
     {
       "type": "ellipse",
@@ -3464,8 +3464,8 @@
     },
     {
       "type": "text",
-      "version": 621,
-      "versionNonce": 2129974445,
+      "version": 622,
+      "versionNonce": 1063556336,
       "isDeleted": false,
       "id": "uZbdS9FxErnb--2jCs83p",
       "fillStyle": "solid",
@@ -3478,7 +3478,7 @@
       "y": 2598.491475571425,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
-      "width": 24.953125,
+      "width": 22,
       "height": 24,
       "seed": 994227459,
       "groupIds": [
@@ -3487,7 +3487,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1736296869553,
+      "updated": 1740913893509,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -3498,7 +3498,7 @@
       "containerId": null,
       "originalText": "❗",
       "lineHeight": 1.2,
-      "baseline": 19
+      "baseline": 20
     }
   ],
   "appState": {
