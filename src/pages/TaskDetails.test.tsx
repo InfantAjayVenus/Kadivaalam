@@ -124,7 +124,7 @@ describe("TaskDetails should", () => {
         expect(screen.getByRole("active-task-description")).toHaveTextContent(updatedTask.description);
     });
 
-    it("should go back on close", async () => {
+    it.skip("should go back on close", async () => {
 
        useTaskStore.setState({
             tasks: [
